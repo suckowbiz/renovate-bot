@@ -1,0 +1,14 @@
+{
+    "onboarding": true,
+    "logLevel": "debug",
+    "gitAuthor": "Renovate Bot <bot@renovate.com>",
+    "plattform": "github",
+    "labels": [
+      "dependencies"
+    ],
+    "repositories": [
+      "suckowbiz/simplepast",
+      "suckowbiz/renovate-bot"
+    ]
+  }
+  

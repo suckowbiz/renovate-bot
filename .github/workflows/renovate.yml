@@ -1,0 +1,20 @@
+---
+name: Update Dependencies
+on:
+  schedule:
+    # Every 15mins
+    - cron: '15 * * * *'
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Sources
+        uses: actions/checkout@v3.3.0
+      - name: Run Renovate Bot
+        uses: renovatebot/github-action@v34.154.4
+        with:
+          # This configuration configures the self-hosted solution. To configure how
+          # renovate acts in a github repo another configuration is used.
+          # See: https://docs.renovatebot.com/configuration-options/
+          configurationFile: .github/workflows/renovate-self-hosted.json
+          token: ${{ secrets.RENOVATE_TOKEN }}
