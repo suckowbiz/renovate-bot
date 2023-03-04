@@ -16,5 +16,5 @@ jobs:
           # This configuration configures the self-hosted solution. To configure how
           # renovate acts in a github repo another configuration is used.
           # See: https://docs.renovatebot.com/configuration-options/
-          configurationFile: .github/workflows/renovate-self-hosted.json
+          configurationFile: .github/workflows/renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}

@@ -1,6 +1,3 @@
 # renovate-bot
-A self-hosted renovate bot to upgrade repository dependencies.
 
-## How Does it Work?
-
-This repository implements a GitHub action that runs on a schedule. The renovate configuration contains a list of GitHub repositories that are under "renovation" for each run.
+This repository exists to "self-host" a renovate bot that is executed via GitHub action on a scheduled basis to upgrade dependencies of my GitHub repositories.
