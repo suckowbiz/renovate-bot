@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Sources
         uses: actions/checkout@v3.3.0
       - name: Run Renovate Bot
-        uses: renovatebot/github-action@v34.154.4
+        uses: renovatebot/github-action@v34.159.2
         with:
           # This configuration configures the self-hosted solution. To configure how
           # renovate acts in a github repo another configuration is used.
